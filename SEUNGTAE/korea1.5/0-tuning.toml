@@ -13,7 +13,7 @@ amp = true
 
 [space.data]
 cache = true
-path = "/home/dxlab/data/dxlab/jupyter/seungtae/tabm/exp/tabm/korea1.5/dataset"
+path = "/home/dxlab/data/dxlab/jupyter/seungtae/tabm/SEUNGTAE/korea1.5/dataset"
 num_policy = "noisy-quantile"
 
 [space.optimizer]
@@ -22,7 +22,7 @@ lr = ["_tune_", "loguniform", 0.0001, 0.003]
 weight_decay = ["_tune_", "?loguniform", 0.0, 0.0001, 0.1]
 
 [space.model]
-arch_type = "tabm"
+arch_type = "tabm-mini"
 k = 32
 share_training_batches = false
 
