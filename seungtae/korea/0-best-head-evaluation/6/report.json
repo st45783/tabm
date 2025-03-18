@@ -1,0 +1,68 @@
+{
+    "function": "bin.model.main",
+    "gpus": [
+        "NVIDIA GeForce RTX 2080 Ti",
+        "NVIDIA GeForce RTX 2080 Ti",
+        "NVIDIA GeForce RTX 2080 Ti"
+    ],
+    "config": {
+        "seed": 6,
+        "batch_size": 256,
+        "patience": 16,
+        "n_epochs": -1,
+        "gradient_clipping_norm": 1.0,
+        "amp": true,
+        "data": {
+            "cache": true,
+            "path": "/home/dxlab/data/dxlab/jupyter/seungtae/tabm/exp/tabm/korea/dataset",
+            "num_policy": "noisy-quantile"
+        },
+        "optimizer": {
+            "type": "AdamW",
+            "lr": 0.00011184538628817076,
+            "weight_decay": 0.0010913099057351175
+        },
+        "model": {
+            "arch_type": "tabm",
+            "k": 32,
+            "share_training_batches": false,
+            "backbone": {
+                "type": "MLP",
+                "n_blocks": 4,
+                "d_block": 240,
+                "dropout": 0.0
+            }
+        }
+    },
+    "n_parameters": 287840,
+    "prediction_type": "labels",
+    "epoch_size": 147,
+    "best_step": 18081,
+    "metrics": {
+        "train": {
+            "rmse": 513233.8093929511,
+            "mae": 231205.8125,
+            "r2": 0.8176969019873627,
+            "score": -513233.8093929511
+        },
+        "val": {
+            "rmse": 939958.5505074146,
+            "mae": 283312.03125,
+            "r2": 0.30649582562704136,
+            "score": -939958.5505074146
+        },
+        "test": {
+            "rmse": 944107.8002177505,
+            "mae": 280214.75,
+            "r2": 0.10718240277668278,
+            "score": -944107.8002177505
+        }
+    },
+    "time": "0:57:11.335508",
+    "chunk_size": null,
+    "eval_batch_size": 32768,
+    "heads": [
+        19
+    ],
+    "head_selection_time": "0:00:00.030874"
+}
