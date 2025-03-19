@@ -1,0 +1,81 @@
+{
+    "function": "bin.model.main",
+    "gpus": [
+        "NVIDIA GeForce RTX 2080 Ti",
+        "NVIDIA GeForce RTX 2080 Ti",
+        "NVIDIA GeForce RTX 2080 Ti"
+    ],
+    "config": {
+        "seed": 9,
+        "batch_size": 256,
+        "patience": 16,
+        "n_epochs": -1,
+        "gradient_clipping_norm": 1.0,
+        "amp": true,
+        "data": {
+            "cache": true,
+            "path": "/home/dxlab/data/dxlab/jupyter/seungtae/tabm/SEUNGTAE/korea1.5/dataset",
+            "num_policy": "noisy-quantile"
+        },
+        "optimizer": {
+            "type": "AdamW",
+            "lr": 0.0003008643713310103,
+            "weight_decay": 0.0003585076100054745
+        },
+        "model": {
+            "arch_type": "tabm-mini",
+            "k": 32,
+            "share_training_batches": false,
+            "backbone": {
+                "type": "MLP",
+                "n_blocks": 5,
+                "d_block": 320,
+                "dropout": 0.0
+            }
+        }
+    },
+    "n_parameters": 451040,
+    "prediction_type": "labels",
+    "epoch_size": 129,
+    "best_step": 9288,
+    "metrics": {
+        "train": {
+            "rmse": 64683.583326838045,
+            "mae": 43625.58203125,
+            "r2": 0.5435316389268128,
+            "score": -64683.583326838045
+        },
+        "val": {
+            "rmse": 72693.94296638475,
+            "mae": 48739.7890625,
+            "r2": 0.4105077915270182,
+            "score": -72693.94296638475
+        },
+        "test": {
+            "rmse": 73311.57747586667,
+            "mae": 49141.76953125,
+            "r2": 0.39837038757912324,
+            "score": -73311.57747586667
+        }
+    },
+    "time": "0:01:01.698705",
+    "chunk_size": null,
+    "eval_batch_size": 32768,
+    "heads": [
+        2,
+        10,
+        27,
+        9,
+        25,
+        28,
+        30,
+        21,
+        15,
+        24,
+        10,
+        16,
+        22,
+        19
+    ],
+    "head_selection_time": "0:00:00.429043"
+}

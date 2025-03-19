@@ -1,0 +1,37 @@
+{
+    "function": "bin.ensemble.main",
+    "config": {
+        "seeds": [
+            10,
+            11,
+            12,
+            13,
+            14
+        ],
+        "data": {
+            "path": "/home/dxlab/data/dxlab/jupyter/seungtae/tabm/SEUNGTAE/korea1.5/dataset"
+        }
+    },
+    "single_model_function": "bin.model.main",
+    "prediction_type": "labels",
+    "metrics": {
+        "train": {
+            "rmse": 63464.051934934,
+            "mae": 42551.51171875,
+            "r2": 0.5605817242394748,
+            "score": -63464.051934934
+        },
+        "val": {
+            "rmse": 73360.85670164983,
+            "mae": 48756.01171875,
+            "r2": 0.3996418472836747,
+            "score": -73360.85670164983
+        },
+        "test": {
+            "rmse": 73307.06574403316,
+            "mae": 48784.06640625,
+            "r2": 0.39844449018063066,
+            "score": -73307.06574403316
+        }
+    }
+}

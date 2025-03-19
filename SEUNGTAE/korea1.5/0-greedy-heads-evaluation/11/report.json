@@ -1,0 +1,81 @@
+{
+    "function": "bin.model.main",
+    "gpus": [
+        "NVIDIA GeForce RTX 2080 Ti",
+        "NVIDIA GeForce RTX 2080 Ti",
+        "NVIDIA GeForce RTX 2080 Ti"
+    ],
+    "config": {
+        "seed": 11,
+        "batch_size": 256,
+        "patience": 16,
+        "n_epochs": -1,
+        "gradient_clipping_norm": 1.0,
+        "amp": true,
+        "data": {
+            "cache": true,
+            "path": "/home/dxlab/data/dxlab/jupyter/seungtae/tabm/SEUNGTAE/korea1.5/dataset",
+            "num_policy": "noisy-quantile"
+        },
+        "optimizer": {
+            "type": "AdamW",
+            "lr": 0.0003008643713310103,
+            "weight_decay": 0.0003585076100054745
+        },
+        "model": {
+            "arch_type": "tabm-mini",
+            "k": 32,
+            "share_training_batches": false,
+            "backbone": {
+                "type": "MLP",
+                "n_blocks": 5,
+                "d_block": 320,
+                "dropout": 0.0
+            }
+        }
+    },
+    "n_parameters": 451040,
+    "prediction_type": "labels",
+    "epoch_size": 129,
+    "best_step": 8385,
+    "metrics": {
+        "train": {
+            "rmse": 67773.50325901709,
+            "mae": 45584.34765625,
+            "r2": 0.4988792933906634,
+            "score": -67773.50325901709
+        },
+        "val": {
+            "rmse": 73195.86786151251,
+            "mae": 49045.45703125,
+            "r2": 0.402339210381329,
+            "score": -73195.86786151251
+        },
+        "test": {
+            "rmse": 73520.27334007947,
+            "mae": 49215.0390625,
+            "r2": 0.39494023449840066,
+            "score": -73520.27334007947
+        }
+    },
+    "time": "0:00:56.846790",
+    "chunk_size": null,
+    "eval_batch_size": 32768,
+    "heads": [
+        4,
+        13,
+        11,
+        16,
+        29,
+        1,
+        14,
+        19,
+        15,
+        11,
+        24,
+        13,
+        17,
+        2
+    ],
+    "head_selection_time": "0:00:00.431882"
+}

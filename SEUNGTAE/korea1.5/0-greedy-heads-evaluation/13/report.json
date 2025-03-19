@@ -1,0 +1,79 @@
+{
+    "function": "bin.model.main",
+    "gpus": [
+        "NVIDIA GeForce RTX 2080 Ti",
+        "NVIDIA GeForce RTX 2080 Ti",
+        "NVIDIA GeForce RTX 2080 Ti"
+    ],
+    "config": {
+        "seed": 13,
+        "batch_size": 256,
+        "patience": 16,
+        "n_epochs": -1,
+        "gradient_clipping_norm": 1.0,
+        "amp": true,
+        "data": {
+            "cache": true,
+            "path": "/home/dxlab/data/dxlab/jupyter/seungtae/tabm/SEUNGTAE/korea1.5/dataset",
+            "num_policy": "noisy-quantile"
+        },
+        "optimizer": {
+            "type": "AdamW",
+            "lr": 0.0003008643713310103,
+            "weight_decay": 0.0003585076100054745
+        },
+        "model": {
+            "arch_type": "tabm-mini",
+            "k": 32,
+            "share_training_batches": false,
+            "backbone": {
+                "type": "MLP",
+                "n_blocks": 5,
+                "d_block": 320,
+                "dropout": 0.0
+            }
+        }
+    },
+    "n_parameters": 451040,
+    "prediction_type": "labels",
+    "epoch_size": 129,
+    "best_step": 7869,
+    "metrics": {
+        "train": {
+            "rmse": 65900.80885694803,
+            "mae": 44354.30078125,
+            "r2": 0.5261901624186847,
+            "score": -65900.80885694803
+        },
+        "val": {
+            "rmse": 73368.55086479493,
+            "mae": 49145.67578125,
+            "r2": 0.3995159367824289,
+            "score": -73368.55086479493
+        },
+        "test": {
+            "rmse": 73424.90476670706,
+            "mae": 49269.73046875,
+            "r2": 0.39650895929426866,
+            "score": -73424.90476670706
+        }
+    },
+    "time": "0:00:54.040746",
+    "chunk_size": null,
+    "eval_batch_size": 32768,
+    "heads": [
+        1,
+        29,
+        30,
+        19,
+        22,
+        20,
+        3,
+        16,
+        10,
+        24,
+        6,
+        27
+    ],
+    "head_selection_time": "0:00:00.374905"
+}

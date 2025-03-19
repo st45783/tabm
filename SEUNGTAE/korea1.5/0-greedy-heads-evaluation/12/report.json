@@ -1,0 +1,86 @@
+{
+    "function": "bin.model.main",
+    "gpus": [
+        "NVIDIA GeForce RTX 2080 Ti",
+        "NVIDIA GeForce RTX 2080 Ti",
+        "NVIDIA GeForce RTX 2080 Ti"
+    ],
+    "config": {
+        "seed": 12,
+        "batch_size": 256,
+        "patience": 16,
+        "n_epochs": -1,
+        "gradient_clipping_norm": 1.0,
+        "amp": true,
+        "data": {
+            "cache": true,
+            "path": "/home/dxlab/data/dxlab/jupyter/seungtae/tabm/SEUNGTAE/korea1.5/dataset",
+            "num_policy": "noisy-quantile"
+        },
+        "optimizer": {
+            "type": "AdamW",
+            "lr": 0.0003008643713310103,
+            "weight_decay": 0.0003585076100054745
+        },
+        "model": {
+            "arch_type": "tabm-mini",
+            "k": 32,
+            "share_training_batches": false,
+            "backbone": {
+                "type": "MLP",
+                "n_blocks": 5,
+                "d_block": 320,
+                "dropout": 0.0
+            }
+        }
+    },
+    "n_parameters": 451040,
+    "prediction_type": "labels",
+    "epoch_size": 129,
+    "best_step": 8256,
+    "metrics": {
+        "train": {
+            "rmse": 66880.6392313949,
+            "mae": 44958.3203125,
+            "r2": 0.5119960067824887,
+            "score": -66880.6392313949
+        },
+        "val": {
+            "rmse": 73215.61538360515,
+            "mae": 48913.2109375,
+            "r2": 0.4020167110246049,
+            "score": -73215.61538360515
+        },
+        "test": {
+            "rmse": 73265.36797150479,
+            "mae": 48976.31640625,
+            "r2": 0.39912857623335396,
+            "score": -73265.36797150479
+        }
+    },
+    "time": "0:00:56.391766",
+    "chunk_size": null,
+    "eval_batch_size": 32768,
+    "heads": [
+        19,
+        15,
+        22,
+        6,
+        23,
+        27,
+        18,
+        11,
+        30,
+        15,
+        25,
+        13,
+        24,
+        27,
+        6,
+        23,
+        18,
+        27,
+        15
+    ],
+    "head_selection_time": "0:00:00.597895"
+}
