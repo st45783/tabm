@@ -1,0 +1,78 @@
+{
+    "function": "bin.model.main",
+    "gpus": [
+        "NVIDIA GeForce RTX 2080 Ti",
+        "NVIDIA GeForce RTX 2080 Ti",
+        "NVIDIA GeForce RTX 2080 Ti"
+    ],
+    "config": {
+        "seed": 4,
+        "batch_size": 512,
+        "patience": 16,
+        "n_epochs": -1,
+        "gradient_clipping_norm": 1.0,
+        "amp": true,
+        "data": {
+            "cache": true,
+            "path": "/home/dxlab/data/dxlab/jupyter/seungtae/tabm/SEUNGTAE/korea_undersample/dataset",
+            "num_policy": "noisy-quantile",
+            "cat_policy": "ordinal"
+        },
+        "optimizer": {
+            "type": "AdamW",
+            "lr": 0.001585036863603441,
+            "weight_decay": 0.0
+        },
+        "model": {
+            "arch_type": "tabm-mini",
+            "k": 32,
+            "share_training_batches": false,
+            "backbone": {
+                "type": "MLP",
+                "n_blocks": 4,
+                "d_block": 288,
+                "dropout": 0.19829332106574343
+            }
+        }
+    },
+    "n_parameters": 281632,
+    "prediction_type": "labels",
+    "epoch_size": 18,
+    "best_step": 1044,
+    "metrics": {
+        "train": {
+            "rmse": 52979.18444068387,
+            "mae": 36231.16796875,
+            "r2": 0.752035353597289,
+            "score": -52979.18444068387
+        },
+        "val": {
+            "rmse": 64830.62782358351,
+            "mae": 43787.57421875,
+            "r2": 0.6211540105405651,
+            "score": -64830.62782358351
+        },
+        "test": {
+            "rmse": 65641.43471923812,
+            "mae": 43836.953125,
+            "r2": 0.6229715128132565,
+            "score": -65641.43471923812
+        }
+    },
+    "time": "0:00:10.670119",
+    "chunk_size": null,
+    "eval_batch_size": 32768,
+    "heads": [
+        15,
+        14,
+        25,
+        23,
+        19,
+        5,
+        12,
+        14,
+        25,
+        19
+    ],
+    "head_selection_time": "0:00:00.256365"
+}
