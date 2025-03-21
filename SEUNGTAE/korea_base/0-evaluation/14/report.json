@@ -1,0 +1,63 @@
+{
+    "function": "bin.model.main",
+    "gpus": [
+        "NVIDIA A100 80GB PCIe MIG 2g.20gb"
+    ],
+    "config": {
+        "seed": 14,
+        "batch_size": 512,
+        "patience": 16,
+        "n_epochs": -1,
+        "gradient_clipping_norm": 1.0,
+        "amp": true,
+        "data": {
+            "cache": true,
+            "path": "/home/elicer/tabm/SEUNGTAE/korea_base/dataset",
+            "num_policy": "noisy-quantile",
+            "cat_policy": "ordinal"
+        },
+        "optimizer": {
+            "type": "AdamW",
+            "lr": 0.0011563746902507038,
+            "weight_decay": 0.0015827100831528388
+        },
+        "model": {
+            "arch_type": "tabm",
+            "k": 32,
+            "share_training_batches": false,
+            "backbone": {
+                "type": "MLP",
+                "n_blocks": 4,
+                "d_block": 256,
+                "dropout": 0.08464895567510722
+            }
+        }
+    },
+    "n_parameters": 315104,
+    "prediction_type": "labels",
+    "epoch_size": 63,
+    "best_step": 11151,
+    "metrics": {
+        "train": {
+            "rmse": 36299.23282935881,
+            "mae": 22995.181640625,
+            "r2": 0.8521804664628142,
+            "score": -36299.23282935881
+        },
+        "val": {
+            "rmse": 50478.71947662698,
+            "mae": 30773.1328125,
+            "r2": 0.715686763117305,
+            "score": -50478.71947662698
+        },
+        "test": {
+            "rmse": 49179.58600883094,
+            "mae": 29691.625,
+            "r2": 0.7202092267829492,
+            "score": -49179.58600883094
+        }
+    },
+    "time": "0:01:49.112565",
+    "chunk_size": null,
+    "eval_batch_size": 32768
+}

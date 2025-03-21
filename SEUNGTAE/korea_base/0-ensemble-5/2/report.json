@@ -1,0 +1,37 @@
+{
+    "function": "bin.ensemble.main",
+    "config": {
+        "seeds": [
+            10,
+            11,
+            12,
+            13,
+            14
+        ],
+        "data": {
+            "path": "/home/elicer/tabm/SEUNGTAE/korea_base/dataset"
+        }
+    },
+    "single_model_function": "bin.model.main",
+    "prediction_type": "labels",
+    "metrics": {
+        "train": {
+            "rmse": 36764.30442698461,
+            "mae": 23269.357421875,
+            "r2": 0.8483684432738572,
+            "score": -36764.30442698461
+        },
+        "val": {
+            "rmse": 50218.98159062965,
+            "mae": 30692.18359375,
+            "r2": 0.7186050820108587,
+            "score": -50218.98159062965
+        },
+        "test": {
+            "rmse": 48866.75827185593,
+            "mae": 29526.962890625,
+            "r2": 0.7237573690320986,
+            "score": -48866.75827185593
+        }
+    }
+}

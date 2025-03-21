@@ -1,0 +1,20 @@
+{
+    "function": "bin.tune.main",
+    "best": {
+        "function": "bin.model.main",
+        "gpus": [
+            "NVIDIA A100 80GB PCIe MIG 2g.20gb"
+        ],
+        "n_parameters": 315104,
+        "tuning_time": "2:30:19.574353",
+        "trial_id": 66,
+        "scores": {
+            "train": -34466.12064042021,
+            "val": -49905.3080944302,
+            "test": -48870.75788239835
+        },
+        "time": "0:03:05.564513"
+    },
+    "n_completed_trials": 100,
+    "time": "3:46:03.115981"
+}

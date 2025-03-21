@@ -1,0 +1,13 @@
+{
+    "function": "bin.model.main",
+    "gpus": [
+        "NVIDIA A100 80GB PCIe MIG 2g.20gb"
+    ],
+    "n_parameters": 315104,
+    "scores": {
+        "train": -36766.14268590057,
+        "val": -50303.366408223614,
+        "test": -48914.84191940111
+    },
+    "time": "0:02:22.718633"
+}
