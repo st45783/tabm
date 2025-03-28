@@ -13,7 +13,7 @@ amp = true
 
 [space.data]
 cache = true
-path = "/home/dxlab/data/dxlab/jupyter/seungtae/tabm/SEUNGTAE/korea_removebuild/dataset"
+path = "/home/dxlab/data/dxlab/jupyter/seungtae/tabm/SEUNGTAE/korea_removebuild_mini/dataset"
 num_policy = "noisy-quantile"
 cat_policy = "ordinal"
 

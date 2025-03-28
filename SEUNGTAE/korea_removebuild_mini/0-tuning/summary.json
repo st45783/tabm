@@ -1,0 +1,20 @@
+{
+    "function": "SEUNGTAE.bin.tune.main",
+    "best": {
+        "function": "bin.model.main",
+        "gpus": [
+            "NVIDIA GeForce RTX 2080 Ti"
+        ],
+        "n_parameters": 746368,
+        "tuning_time": "0:00:19.700748",
+        "trial_id": 0,
+        "scores": {
+            "train": -52661.935855036696,
+            "val": -65906.60057991157,
+            "test": -65919.64271747837
+        },
+        "time": "0:00:19.422300"
+    },
+    "n_completed_trials": 2,
+    "time": "0:00:34.048559"
+}

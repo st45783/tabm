@@ -1,6 +1,7 @@
-# 뭔가 하자는건 아니고 진행상황 체크용 입니다.
-📑 [PAPER REVIEW TABLE](https://docs.google.com/spreadsheets/d/1bxu18p6LnYuL9sEkIBHgvk3KlXMwguDeTs77qv8kZQo/edit?gid=0#gid=0)
-📝 [WRITE](https://docs.google.com/document/d/1U3MTY_-d_u2cpfgNmQXl3TMQ708nwf-0c75mOMdH_Js/edit?usp=sharing)
+# 뭔가 하자는건 아니고 진행상황 체크용 입니다. (AI플밍+AI기초)
+📑 [PAPER REVIEW TABLE](https://docs.google.com/spreadsheets/d/1bxu18p6LnYuL9sEkIBHgvk3KlXMwguDeTs77qv8kZQo/edit?gid=0#gid=0)  
+📝 [WRITE](https://docs.google.com/document/d/1U3MTY_-d_u2cpfgNmQXl3TMQ708nwf-0c75mOMdH_Js/edit?usp=sharing)  
+📊 [PPT]
 
 ---
 
