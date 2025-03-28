@@ -1,0 +1,89 @@
+====================================================================================================
+[>>>] SEUNGTAE/korea_base_mini/0-tuning | 2025-03-22 19:24:52.223923
+====================================================================================================
+Already done!
+
+====================================================================================================
+[>>>] SEUNGTAE/korea_base_mini/0-evaluation/0 | 2025-03-22 19:24:52.327644
+====================================================================================================
+The output already exists!
+====================================================================================================
+[>>>] SEUNGTAE/korea_base_mini/0-evaluation/1 | 2025-03-22 19:24:52.327983
+====================================================================================================
+The output already exists!
+====================================================================================================
+[>>>] SEUNGTAE/korea_base_mini/0-evaluation/2 | 2025-03-22 19:24:52.328272
+====================================================================================================
+The output already exists!
+====================================================================================================
+[>>>] SEUNGTAE/korea_base_mini/0-evaluation/3 | 2025-03-22 19:24:52.328539
+====================================================================================================
+The output already exists!
+====================================================================================================
+[>>>] SEUNGTAE/korea_base_mini/0-evaluation/4 | 2025-03-22 19:24:52.328802
+====================================================================================================
+The output already exists!
+====================================================================================================
+[>>>] SEUNGTAE/korea_base_mini/0-evaluation/5 | 2025-03-22 19:24:52.329065
+====================================================================================================
+The output already exists!
+====================================================================================================
+[>>>] SEUNGTAE/korea_base_mini/0-evaluation/6 | 2025-03-22 19:24:52.329323
+====================================================================================================
+The output already exists!
+====================================================================================================
+[>>>] SEUNGTAE/korea_base_mini/0-evaluation/7 | 2025-03-22 19:24:52.329581
+====================================================================================================
+The output already exists!
+====================================================================================================
+[>>>] SEUNGTAE/korea_base_mini/0-evaluation/8 | 2025-03-22 19:24:52.329875
+====================================================================================================
+The output already exists!
+====================================================================================================
+[>>>] SEUNGTAE/korea_base_mini/0-evaluation/9 | 2025-03-22 19:24:52.330145
+====================================================================================================
+The output already exists!
+====================================================================================================
+[>>>] SEUNGTAE/korea_base_mini/0-evaluation/10 | 2025-03-22 19:24:52.330409
+====================================================================================================
+The output already exists!
+====================================================================================================
+[>>>] SEUNGTAE/korea_base_mini/0-evaluation/11 | 2025-03-22 19:24:52.330677
+====================================================================================================
+The output already exists!
+====================================================================================================
+[>>>] SEUNGTAE/korea_base_mini/0-evaluation/12 | 2025-03-22 19:24:52.330941
+====================================================================================================
+The output already exists!
+====================================================================================================
+[>>>] SEUNGTAE/korea_base_mini/0-evaluation/13 | 2025-03-22 19:24:52.331224
+====================================================================================================
+The output already exists!
+====================================================================================================
+[>>>] SEUNGTAE/korea_base_mini/0-evaluation/14 | 2025-03-22 19:24:52.331482
+====================================================================================================
+The output already exists!
+Computing ensembles for SEUNGTAE/korea_base_mini/0-evaluation
+Already exists! | SEUNGTAE/korea_base_mini/0-ensemble-5/0
+Traceback (most recent call last):
+  File "/home/dxlab/data/dxlab/jupyter/seungtae/tabm/bin/go.py", line 66, in <module>
+    main(**vars(parser.parse_args(sys.argv[1:])))
+  File "/home/dxlab/data/dxlab/jupyter/seungtae/tabm/bin/go.py", line 48, in main
+    bin.ensemble.main(evaluation_dir, n_ensembles, ensemble_size, force=force)
+  File "/home/dxlab/data/dxlab/jupyter/seungtae/tabm/bin/ensemble.py", line 99, in main
+    report['metrics'] = task.calculate_metrics(
+  File "/home/dxlab/data/dxlab/jupyter/seungtae/tabm/lib/data.py", line 98, in calculate_metrics
+    metrics = {
+  File "/home/dxlab/data/dxlab/jupyter/seungtae/tabm/lib/data.py", line 99, in <dictcomp>
+    part: calculate_metrics_(
+  File "/home/dxlab/data/dxlab/jupyter/seungtae/tabm/lib/metrics.py", line 48, in calculate_metrics
+    'rmse': float(sklearn.metrics.mean_squared_error(y_true, y_pred) ** 0.5),
+  File "/home/dxlab/data/dxlab/anaconda3/envs/st_tabm/lib/python3.10/site-packages/sklearn/utils/_param_validation.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/home/dxlab/data/dxlab/anaconda3/envs/st_tabm/lib/python3.10/site-packages/sklearn/metrics/_regression.py", line 474, in mean_squared_error
+    y_type, y_true, y_pred, multioutput = _check_reg_targets(
+  File "/home/dxlab/data/dxlab/anaconda3/envs/st_tabm/lib/python3.10/site-packages/sklearn/metrics/_regression.py", line 99, in _check_reg_targets
+    check_consistent_length(y_true, y_pred)
+  File "/home/dxlab/data/dxlab/anaconda3/envs/st_tabm/lib/python3.10/site-packages/sklearn/utils/validation.py", line 407, in check_consistent_length
+    raise ValueError(
+ValueError: Found input variables with inconsistent numbers of samples: [31972, 8892]
