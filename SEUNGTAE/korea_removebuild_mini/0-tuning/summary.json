@@ -5,16 +5,16 @@
         "gpus": [
             "NVIDIA GeForce RTX 2080 Ti"
         ],
-        "n_parameters": 746368,
-        "tuning_time": "0:00:19.700748",
-        "trial_id": 0,
+        "n_parameters": 281632,
+        "tuning_time": "0:22:13.592508",
+        "trial_id": 81,
         "scores": {
-            "train": -52661.935855036696,
-            "val": -65906.60057991157,
-            "test": -65919.64271747837
+            "train": -47675.49777401386,
+            "val": -64735.78645540657,
+            "test": -65151.50294505876
         },
-        "time": "0:00:19.422300"
+        "time": "0:00:14.136145"
     },
-    "n_completed_trials": 2,
-    "time": "0:00:34.048559"
+    "n_completed_trials": 100,
+    "time": "0:26:11.881852"
 }

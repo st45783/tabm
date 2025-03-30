@@ -19,7 +19,7 @@
             "amp": true,
             "data": {
                 "cache": true,
-                "path": "/home/dxlab/data/dxlab/jupyter/seungtae/tabm/SEUNGTAE/korea_removebuild_mini/dataset",
+                "path": "SEUNGTAE/korea_removebuild_mini/dataset",
                 "num_policy": "noisy-quantile",
                 "cat_policy": "ordinal"
             },
@@ -40,7 +40,7 @@
                 ]
             },
             "model": {
-                "arch_type": "tabm",
+                "arch_type": "tabm-mini",
                 "k": 32,
                 "share_training_batches": false,
                 "backbone": {
@@ -83,57 +83,57 @@
             "amp": true,
             "data": {
                 "cache": true,
-                "path": "/home/dxlab/data/dxlab/jupyter/seungtae/tabm/SEUNGTAE/korea_removebuild_mini/dataset",
+                "path": "SEUNGTAE/korea_removebuild_mini/dataset",
                 "num_policy": "noisy-quantile",
                 "cat_policy": "ordinal"
             },
             "optimizer": {
                 "type": "AdamW",
-                "lr": 0.0007076907181813102,
+                "lr": 0.001585036863603441,
                 "weight_decay": 0.0
             },
             "model": {
-                "arch_type": "tabm",
+                "arch_type": "tabm-mini",
                 "k": 32,
                 "share_training_batches": false,
                 "backbone": {
                     "type": "MLP",
-                    "n_blocks": 5,
-                    "d_block": 368,
-                    "dropout": 0.0
+                    "n_blocks": 4,
+                    "d_block": 288,
+                    "dropout": 0.19829332106574343
                 }
             }
         },
-        "n_parameters": 746368,
+        "n_parameters": 281632,
         "prediction_type": "labels",
         "epoch_size": 18,
-        "best_step": 1044,
+        "best_step": 1422,
         "metrics": {
             "train": {
-                "rmse": 52661.935855036696,
-                "mae": 35948.45703125,
-                "r2": 0.7549961831614853,
-                "score": -52661.935855036696
+                "rmse": 47675.49777401386,
+                "mae": 32284.4375,
+                "r2": 0.7991972251324739,
+                "score": -47675.49777401386
             },
             "val": {
-                "rmse": 65906.60057991157,
-                "mae": 44149.05859375,
-                "r2": 0.6084745140069963,
-                "score": -65906.60057991157
+                "rmse": 64735.78645540657,
+                "mae": 42627.71875,
+                "r2": 0.6222616152474649,
+                "score": -64735.78645540657
             },
             "test": {
-                "rmse": 65919.64271747837,
-                "mae": 43989.08203125,
-                "r2": 0.619768811006056,
-                "score": -65919.64271747837
+                "rmse": 65151.50294505876,
+                "mae": 42686.98046875,
+                "r2": 0.628578569827943,
+                "score": -65151.50294505876
             }
         },
-        "time": "0:00:19.422300",
+        "time": "0:00:14.136145",
         "chunk_size": null,
         "eval_batch_size": 32768,
-        "trial_id": 0,
-        "tuning_time": "0:00:19.700748"
+        "trial_id": 81,
+        "tuning_time": "0:22:13.592508"
     },
-    "time": "0:00:34.048559",
-    "n_completed_trials": 2
+    "time": "0:26:11.881852",
+    "n_completed_trials": 100
 }
