@@ -682,3 +682,55 @@ data/
 }
 ```
 </details>
+
+
+<details>
+  <summary> Hyperparameter Ensembles for Robustness and Uncertainty Quantiﬁcation 설명 </summary>
+# Hyperparameter Ensembles for Robustness and Uncertainty Quantiﬁcation<!-- omit in toc -->
+
+# 1. Batch ensembles
+---
+![20250513111203](https://github.com/st45783/tabm/blob/main/SEUNGTAE/Pasted%20image%2020250513111203.png)
+$$W_k = W ∘ (r_k s_k^T)$$
+- W: 공유 기본 가중치 행렬
+- $r_k$, $s_k$ : k번째 앙상블 멤버에 대한 랭크-1 벡터
+- ∘ : Hadamard product
+
+# 2. Hyper-batch ensembles
+---
+![2020250513111720](https://github.com/st45783/tabm/blob/main/SEUNGTAE/Pasted%20image%2020250513111720.png)
+$$W_k(λ_k) = W ∘ (r_k s_k^T) + [Δ ∘ (u_k v_k^T)] ∘ e(λ_k)^T
+$$
+- $λ_k$: k번째 앙상블 멤버의 고유한 하이퍼파라미터 벡터
+- $Δ$: 추가적인 공유 가중치 행렬
+- $u_k$, $v_k$: 추가 랭크-1 요소
+- $e(λ_k)$: 하이퍼파라미터에서 임베딩으로의 함수
+
+> STN 논문도 체크 해봐야함 (Batch ensembles+STN 인듯)
+
+# 3. 차이점
+---
+- **Batch ensembles:** 모든 앙상블 멤버가 동일한 하이퍼파라미터(예: 드롭아웃 비율, L2 정규화 강도)를 공유
+- **Hyper-batch ensembles:** 각 앙상블 멤버가 고유한 하이퍼파라미터 분포 $p(λ|k)$를 학습
+	- Self-tuning Networks  아이디어를 앙상블 설정에 통합
+
+# 4. 성능
+---
+1. **향상된 앙상블 다양성**
+    - 가중치 다양성만 있는 batch ensembles보다 약 30% 향상된 다양성 지표 달성
+    - 예: CIFAR-100에서 WRN-28-10 모델의 다양성 지표 0.761 → 0.996
+2. **파라미터 효율성 유지**
+    - Batch ensembles의 메모리 효율성과 병렬 처리 능력 유지
+3. **더 강건한 불확실성 정량화** ??????왜?????
+    - OOD(Out-of-Distribution) 상황에서 기존 앙상블 방법보다 우수한 성능
+    - 예: CIFAR-10-C 데이터셋에서 NLL 1.007 → 0.938로 개선
+
+# 5. tabm 적용
+---
+1. TabM = MLP + BatchEnsemble + Better initialization
+2. 🔑 over TabM = (MLP + BatchEnsemble + Better initialization) + STN or (MLP + BatchEnsemble) + STN
+	- 최적 MLP 스택 k 찾기(현 32)
+
+
+</details>
+
